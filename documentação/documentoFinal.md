@@ -22,22 +22,22 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 # 2. Etapas realizadas
 
-## 2.1 - Etapa 1
+## 2.1 - Containerização do Banco
 
 
-## 2.2 - Etapa 2
+## 2.2 - Containerização da Aplicação + Banco
 
 
-## 2.3 - Etapa 3
+## 2.3 - Containerização da Aplicação + Banco + Front
 
 
-## 2.4 - Etapa 4
+## 2.4 - Containerização da Aplicação + Banco + Front + Nginx
 
 
-## 2.5 - Etapa 5
+## 2.5 - Integração Contínua (Build, Test, Lint)
 
 
-## 2.6 - Etapa 6
+## 2.6 - Deploy Contínuo
 
 
 # 3. Conclusão
