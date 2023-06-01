@@ -1,24 +1,17 @@
-name: CI
+name: Docker Image CI
 
 on:
   push:
-    branches:
-      - master
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
-  build-and-test:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: 14
-
-      - name: Build and test
-        run: |
-          docker build -t rodolfo/my-app:latest .
-          docker run rodolfo/my-app:latest npm test
+    - uses: actions/checkout@v3
+    - name: Trabalho Individual - CI
+      working-directory: ./Trabalho-GCS-Individual
+      run: docker-compose up -d
