@@ -12,6 +12,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Trabalho Individual - CI
+    - name: Trabalho Individual CI
       working-directory: ./Trabalho-GCS-Individual
       run: docker-compose up -d
